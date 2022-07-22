@@ -68,6 +68,7 @@ app.post('/upload', async(req, res) => {
 
 
 
-app.listen(33235, () => {
-    console.log('Example app listening on port 33235!')
+const port = process.env.PORT || 8080
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`)
 })
